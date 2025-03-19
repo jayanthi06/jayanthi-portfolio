@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jayanthi Kotrakona - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="container">
+      <a href="#home" class="logo">Jayanthi Kotrakona</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Banner Section -->
+  <section id="home" class="banner">
+    <div class="container">
+      <div class="banner-text">
+        <h1>Hi, I'm Jayanthi Kotrakona</h1>
+        <p style = "color: #fff">Data Science Professional | PowerBI Developer | Devops Engineer |Python Developer | Machine Learning Enthusiast</p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+      <div class="banner-image">
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a <strong>Data Science professional</strong> with a proven track record of transforming complex data into actionable insights that drive business growth and innovation. With over <strong>3 years of experience</strong> in automation, data engineering, and machine learning, I specialize in building scalable solutions that solve real-world problems.
+      </p>
+      <p>
+        My journey began with a strong foundation in <strong>Computer Science</strong>, followed by a <strong>Master’s in Data Science</strong>, where I achieved a <strong>CGPA of 3.97/4</strong>. This academic excellence, combined with hands-on experience at organizations like <strong>Mercedes-Benz R&D</strong> and <strong>Legato Health Technologies</strong>, has equipped me with a unique blend of technical expertise and business acumen.
+      </p>
+      <p>
+        What sets me apart is my ability to <strong>bridge the gap between data and decision-making</strong>. Whether it’s developing an automation framework for Infotainment ECU, predicting used car prices with machine learning models, or creating interactive Power BI dashboards for healthcare analytics, I thrive on delivering solutions that are both innovative and impactful.
+      </p>
+      <p>
+        I am passionate about <strong>leveraging data to drive positive change</strong>. From advanced analytics to designing an Autism Support App that enhances learning experiences for children, I am committed to using technology to make a difference.
+      </p>
+      <p>
+        When I’m not coding or analyzing data, you’ll find me exploring the latest trends in AI, contributing to open-source projects, or mentoring aspiring data scientists. I believe in continuous learning and collaboration, and I’m always excited to take on new challenges that push the boundaries of what’s possible with data.
+      </p>
+      <p>
+        Let’s connect and create something extraordinary together!
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container">
+      <h2 style = "color: #f0e2e2">Experience</h2>
+      
+      <div class="experience-item">
+        <h3 style = "color: #fff">Data Engineer | Mercedes-Benz R&D</h3>
+        <p style = "color: #fff">October 2021 - January 2023</p>
+        <ul>
+          <li style = "color: #fff">Developed an automation framework for Infotainment ECU.</li>
+          <li style = "color: #fff">Created a verification pipeline for testing infotainment features using Python and DevOps.</li>
+          <li style = "color: #fff">Collaborated with cross-functional teams to integrate machine learning models.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3 style = "color: #fff">Associate Software Engineer | Legato Health Technologies</h3>
+        <p style = "color: #fff">June 2021 - October 2021</p>
+        <ul>
+          <li style = "color: #fff">Designed and implemented software programs, providing support to production systems.</li>
+          <li style = "color: #fff">Collaborated with data scientists to implement statistical models and predictive analytics.</li>
+          <li style = "color: #fff">Integrated data from multiple sources for efficient analysis using Python.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        <!-- Project 1: Autism Support App -->
+        <div class="project-card" onclick="flipCard(this)">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <h3>Autism Support App</h3>
+              <ul>
+                <li>Click for info</li>
+              </ul>
+            </div>
+            <div class="project-card-back">
+              <p>
+                An app to assist children with autism in engaging with customized learning activities. 
+                The app integrates audio processing, transcription features, and responsive design to enhance accessibility and user experience.
+              </p>
+              <a href="https://github.com/jayanthi06/Autism-App" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 2: Used Cars Price Prediction -->
+        <div class="project-card" onclick="flipCard(this)">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <h3>Used Cars Price Prediction</h3>
+              <ul>
+                <li>Click for info</li>
+              </ul>
+            </div>
+            <div class="project-card-back">
+              <p>A machine learning project to predict used car prices using Decision Tree and Random Forest models.</p>
+              <a href="https://github.com/jayanthi06/UsedCarsPricePrediction" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Predictive Analysis for Traffic Management -->
+        <div class="project-card" onclick="flipCard(this)">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <h3>Predictive Analysis for Traffic Management</h3>
+              <ul>
+                <li>Click for info</li>
+              </ul>
+            </div>
+            <div class="project-card-back">
+              <p>
+                This project focuses on predicting traffic patterns to optimize traffic management systems. 
+              </p>
+              <p>
+                Technologies used: Python, Pandas, Scikit-Learn, Matplotlib, Seaborn.
+              </p>
+              <a href="https://github.com/jayanthi06/PredictiveAnalysisTrafficMngmnt" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 4: Online Fraud Detection -->
+        <div class="project-card" onclick="flipCard(this)">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <h3>Online Fraud Detection</h3>
+              <ul>
+                <li>Click for info</li>
+              </ul>
+            </div>
+            <div class="project-card-back">
+              <p>Implemented machine learning models to detect online payment fraud, reducing fraud losses by 33%.</p>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 5: Power BI Churn Analysis of Sales Dashboard -->
+        <div class="project-card" onclick="flipCard(this)">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <h3>Power BI Churn Analysis of Sales Dashboard</h3>
+              <ul>
+                <li>Click for info</li>
+              </ul>
+            </div>
+            <div class="project-card-back">
+              <p>
+                Developed a Power BI dashboard to analyze customer churn and sales performance. 
+                The dashboard includes key metrics such as churn rate, customer lifetime value, and sales trends. 
+                Used DAX (Data Analysis Expressions) to create calculated columns and measures for advanced analytics.
+              </p>
+              <a href="https://github.com/your-username/powerbi-churn-analysis" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Project 6: Power BI Healthcare Analysis Dashboard -->
+        <div class="project-card" onclick="flipCard(this)">
+          <div class="project-card-inner">
+            <div class="project-card-front">
+              <h3>Power BI Healthcare Analysis Dashboard</h3>
+              <br>
+              <ul>
+                <li>Click for info</li>
+              </ul>
+            </div>
+            <div class="project-card-back">
+              <p>
+                Developed a Power BI dashboard to analyze hospital and insurance provider performance. 
+                The dashboard includes key metrics such as hospital rank based on insurance provider, top N dynamic data for hospitals, and insurance provider trends. 
+                Used DAX (Data Analysis Expressions) to create calculated columns and measures for advanced analytics.
+              </p>
+              <a href="https://github.com/your-username/powerbi-healthcare-analysis" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+
+         <!-- Project 7: CI/CD Pipeline for Train Schedule Auto-Deploy -->
+      <div class="project-card" onclick="flipCard(this)">
+        <div class="project-card-inner">
+          <div class="project-card-front">
+            <h3>CI/CD Pipeline for Train Schedule Auto-Deploy</h3>
+            <ul>
+              <li>Click for info</li>
+            </ul>
+          </div>
+          <div class="project-card-back">
+            <p>
+              Developed a CI/CD pipeline to automate the deployment of a train schedule application. 
+              The pipeline includes automated testing, continuous integration, and continuous deployment using tools like Jenkins and Docker.
+            </p>
+            <a href="https://github.com/jayanthi06/cicd-pipeline-train-schedule-autodeploy" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8: Power Automate Flow -->
+      <div class="project-card" onclick="flipCard(this)">
+        <div class="project-card-inner">
+          <div class="project-card-front">
+            <h3>Power Automate Flow</h3>
+            <ul>
+              <li>Click for info</li>
+            </ul>
+          </div>
+          <div class="project-card-back">
+            <p>
+              Developed an automated workflow using Microsoft Power Automate flow, integrates multiple data sources, automates repetitive tasks, and sends notifications to stakeholders.
+              Reduces the manual process by automation
+            </p>
+            <p>
+              Technologies used: Power Automate, Microsoft 365, and cloud-based connectors.
+            </p>
+            <a href="https://github.com/jayanthi06/Leave-Approval-Automation-using-Power-Automate" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <!-- Programming & Scripting -->
+        <div class="skill-category">
+          <h3>Programming & Scripting</h3>
+          <div class="skill-item">
+            <span class="skill-name">Python</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">R</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Java</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">SAS</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">SQL</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Data Engineering -->
+        <div class="skill-category">
+          <h3>Data Engineering</h3>
+          <div class="skill-item">
+            <span class="skill-name">Data Collection</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Data Preparation</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Data Cleansing</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Data Transformation</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">ETL Tools (Ab Initio, Informatica)</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Control-M (Scheduling)</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 65%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">SSIS (SQL Server Integration Services)</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Machine Learning -->
+        <div class="skill-category">
+          <h3>Machine Learning</h3>
+          <div class="skill-item">
+            <span class="skill-name">Predictive Modeling</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Prescriptive Modeling</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">PyTorch</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">TensorFlow</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Scikit-Learn</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Churn Analysis</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Cloud & Big Data -->
+        <div class="skill-category">
+          <h3>Cloud & Big Data</h3>
+          <div class="skill-item">
+            <span class="skill-name">AWS (Redshift, S3, Glue, EMR, Kinesis, FireHose, Lambda)</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Azure</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Big Data Analytics</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Automation -->
+        <div class="skill-category">
+          <h3>Automation</h3>
+          <div class="skill-item">
+            <span class="skill-name">Python Scripting</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Automation Frameworks</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">DevOps</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Software Development -->
+        <div class="skill-category">
+          <h3>Software Development</h3>
+          <div class="skill-item">
+            <span class="skill-name">Agile Methodologies</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Design Thinking</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Problem-Solving</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Visualization & BI Tools -->
+        <div class="skill-category">
+          <h3>Visualization & BI Tools</h3>
+          <div class="skill-item">
+            <span class="skill-name">Power BI</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Tableau</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Matplotlib</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Seaborn</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Communication & Collaboration -->
+        <div class="skill-category">
+          <h3>Communication & Collaboration</h3>
+          <div class="skill-item">
+            <span class="skill-name">Team Collaboration</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 95%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Verbal & Written Communication</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Cross-Functional Teamwork</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <!-- Email -->
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:jayanthikotrakona@gmail.com">jayanthikotrakona@gmail.com</a>
+        </div>
+  
+        <!-- LinkedIn -->
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://www.linkedin.com/in/jayanthi-kotrakona" target="_blank">LinkedIn Profile</a>
+        </div>
+  
+        <!-- GitHub -->
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/jayanthi06" target="_blank">GitHub Profile</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <p>&copy; 2025 Jayanthi Kotrakona. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
