@@ -6,6 +6,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jayanthi Kotrakona - Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Project Links Styling */
+    .project-links {
+      margin-top: 15px;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .project-link {
+      color: #4fc3f7;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      position: relative;
+      padding-bottom: 2px;
+      transition: all 0.3s ease;
+    }
+    
+    .project-link::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #4fc3f7;
+      transform: scaleX(1);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease;
+    }
+    
+    .project-link:hover {
+      color: #fff;
+    }
+    
+    .project-link:hover::after {
+      background-color: #fff;
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    
+    @media (max-width: 768px) {
+      .project-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -27,11 +78,11 @@
     <div class="container">
       <div class="banner-text">
         <h1>Hi, I'm Jayanthi Kotrakona</h1>
-        <p style = "color: #fff">Data Science Professional | PowerBI Developer | Devops Engineer |Python Developer | Machine Learning Enthusiast</p>
+        <p style="color: #fff">Data Science & AI Solutions Developer | PowerBI Developer | Devops Engineer | Python Developer | Machine Learning Enthusiast</p>
         <a href="#about" class="btn">Learn More</a>
       </div>
       <div class="banner-image">
-        
+        <!-- Image would go here -->
       </div>
     </div>
   </section>
@@ -41,22 +92,37 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I am a <strong>Data Science professional</strong> with a proven track record of transforming complex data into actionable insights that drive business growth and innovation. With over <strong>3 years of experience</strong> in automation, data engineering, and machine learning, I specialize in building scalable solutions that solve real-world problems.
+        I am a <strong>Data Science professional</strong> with a proven track record of transforming complex data, building scalable data pipelines, machine learning models, and interactive dashboards that drive business growth and innovation. My expertise spans <strong>Python, SQL, AWS/Azure cloud platforms, and Power BI</strong>, with a passion for transforming raw data into actionable business insights. With over <strong>3 years of experience</strong> in automation, data engineering, and machine learning, I specialize in building scalable solutions that solve real-world problems.
       </p>
       <p>
-        My journey began with a strong foundation in <strong>Computer Science</strong>, followed by a <strong>Master’s in Data Science</strong>, where I achieved a <strong>CGPA of 3.97/4</strong>. This academic excellence, combined with hands-on experience at organizations like <strong>Mercedes-Benz R&D</strong> and <strong>Legato Health Technologies</strong>, has equipped me with a unique blend of technical expertise and business acumen.
-      </p>
+        My journey began with a strong foundation in <strong>Computer Science</strong>, followed by a <strong>Master's in Data Science</strong>, where I achieved a <strong>CGPA of 3.97/4</strong>. This academic excellence, combined with hands-on experience at organizations like <strong>Mercedes-Benz R&D</strong> and <strong>Legato Health Technologies</strong>, has equipped me with a unique blend of technical expertise and business acumen.
+      
+      <h3 class="about-subtitle">What I Bring to the Table:</h3>
+      <ul class="about-highlights">
+        <li>
+          <strong>End-to-End Data Solutions</strong>: Designed and deployed 10+ cloud-based data pipelines (AWS Glue, Azure Synapse) processing millions of records daily.
+        </li>
+        <li>
+          <strong>Machine Learning in Production</strong>: Developed predictive models (LightGBM, Random Forest) with 90%+ accuracy for fraud detection, flight delays, and pricing analytics.
+        </li>
+        <li>
+          <strong>Data Visualization</strong>: Created executive dashboards in Power BI and QuickSight that reduced reporting time by 80% for clients like Mercedes-Benz and Legato Health.
+        </li>
+        <li>
+          <strong>Automation & DevOps</strong>: Built CI/CD pipelines (Jenkins, Docker) and automated workflows using Python and Power Automate.
+        </li>
+      </ul>
       <p>
-        What sets me apart is my ability to <strong>bridge the gap between data and decision-making</strong>. Whether it’s developing an automation framework for Infotainment ECU, predicting used car prices with machine learning models, or creating interactive Power BI dashboards for healthcare analytics, I thrive on delivering solutions that are both innovative and impactful.
+        What sets me apart is my ability to <strong>bridge the gap between data and decision-making</strong>. Whether it's developing an automation framework for Infotainment ECU, predicting used car prices with machine learning models, or creating interactive Power BI dashboards for healthcare analytics, I thrive on delivering solutions that are both innovative and impactful.
       </p>
       <p>
         I am passionate about <strong>leveraging data to drive positive change</strong>. From advanced analytics to designing an Autism Support App that enhances learning experiences for children, I am committed to using technology to make a difference.
       </p>
       <p>
-        When I’m not coding or analyzing data, you’ll find me exploring the latest trends in AI, contributing to open-source projects, or mentoring aspiring data scientists. I believe in continuous learning and collaboration, and I’m always excited to take on new challenges that push the boundaries of what’s possible with data.
+        When I'm not coding or analyzing data, you'll find me exploring the latest trends in AI, contributing to open-source projects. I believe in continuous learning and collaboration, and I'm always excited to take on new challenges that push the boundaries of what's possible with data.
       </p>
       <p>
-        Let’s connect and create something extraordinary together!
+        Let's connect and create something extraordinary together!
       </p>
     </div>
   </section>
@@ -64,24 +130,24 @@
   <!-- Experience Section -->
   <section id="experience" class="experience">
     <div class="container">
-      <h2 style = "color: #f0e2e2">Experience</h2>
+      <h2 style="color: #f0e2e2">Experience</h2>
       
       <div class="experience-item">
-        <h3 style = "color: #fff">Data Engineer | Mercedes-Benz R&D</h3>
-        <p style = "color: #fff">October 2021 - January 2023</p>
+        <h3 style="color: #fff">Data Engineer | Mercedes-Benz R&D</h3>
+        <p style="color: #fff">October 2021 - January 2023</p>
         <ul>
-          <li style = "color: #fff">Developed an automation framework for Infotainment ECU.</li>
-          <li style = "color: #fff">Created a verification pipeline for testing infotainment features using Python and DevOps.</li>
-          <li style = "color: #fff">Collaborated with cross-functional teams to integrate machine learning models.</li>
+          <li style="color: #fff">Developed an automation framework for Infotainment ECU.</li>
+          <li style="color: #fff">Created a verification pipeline for testing infotainment features using Python and DevOps.</li>
+          <li style="color: #fff">Collaborated with cross-functional teams to integrate machine learning models.</li>
         </ul>
       </div>
       <div class="experience-item">
-        <h3 style = "color: #fff">Associate Software Engineer | Legato Health Technologies</h3>
-        <p style = "color: #fff">June 2021 - October 2021</p>
+        <h3 style="color: #fff">Associate Software Engineer | Legato Health Technologies</h3>
+        <p style="color: #fff">June 2021 - October 2021</p>
         <ul>
-          <li style = "color: #fff">Designed and implemented software programs, providing support to production systems.</li>
-          <li style = "color: #fff">Collaborated with data scientists to implement statistical models and predictive analytics.</li>
-          <li style = "color: #fff">Integrated data from multiple sources for efficient analysis using Python.</li>
+          <li style="color: #fff">Designed and implemented software programs, providing support to production systems.</li>
+          <li style="color: #fff">Collaborated with data scientists to implement statistical models and predictive analytics.</li>
+          <li style="color: #fff">Integrated data from multiple sources for efficient analysis using Python.</li>
         </ul>
       </div>
     </div>
@@ -91,166 +157,456 @@
   <section id="projects" class="projects">
     <div class="container">
       <h2>My Projects</h2>
-      <div class="project-grid">
-        <!-- Project 1: Autism Support App -->
-        <div class="project-card" onclick="flipCard(this)">
-          <div class="project-card-inner">
-            <div class="project-card-front">
-              <h3>Autism Support App</h3>
-              <ul>
-                <li>Click for info</li>
-              </ul>
+      
+      <!-- Cloud Projects Section -->
+      <div class="category-section">
+        <h3 class="category-title">Cloud Projects</h3>
+        
+        <!-- Azure Subcategory -->
+        <div class="subcategory">
+          <h4 class="subcategory-title">Azure</h4>
+          <div class="project-grid">
+            <!-- Azure Project 1: Credit Card Fraud Detection -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Credit Card Fraud Detection</h3>
+                  <div class="tech-tags">
+                    <span>Azure Blob Storage</span>
+                    <span>Azure Synapse</span>
+                    <span>PySpark</span>
+                    <span>LightGBM</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>End-to-end ML pipeline with 0.973 AUC score</p>
+                  <ul>
+                    <li>Compared Logistic Regression, Random Forest, LightGBM</li>
+                    <li>Automated data ingestion from Blob Storage</li>
+                    <li>Visualized results with Matplotlib</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/azure-credit-card-fraud-detection" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="project-card-back">
-              <p>
-                An app to assist children with autism in engaging with customized learning activities. 
-                The app integrates audio processing, transcription features, and responsive design to enhance accessibility and user experience.
-              </p>
-              <a href="https://github.com/jayanthi06/Autism-App" target="_blank">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Project 2: Used Cars Price Prediction -->
-        <div class="project-card" onclick="flipCard(this)">
-          <div class="project-card-inner">
-            <div class="project-card-front">
-              <h3>Used Cars Price Prediction</h3>
-              <ul>
-                <li>Click for info</li>
-              </ul>
-            </div>
-            <div class="project-card-back">
-              <p>A machine learning project to predict used car prices using Decision Tree and Random Forest models.</p>
-              <a href="https://github.com/jayanthi06/UsedCarsPricePrediction" target="_blank">View on GitHub</a>
+
+            <!-- Azure Project 2: Weather Streaming -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Weather Streaming</h3>
+                  <div class="tech-tags">
+                    <span>Azure Functions/Databricks</span>
+                    <span>Azure Event Hub</span>
+                    <span>Event Stream</span>
+                    <span>Eventhouse (Kusto DB)</span>
+                    <span>Microsoft Fabric</span>
+                    <span>KustoDB</span>
+                    <span>KQL Querysets</span>
+                    <span>Stream Analytics</span>
+                    <span>Data Activator + Outlook</span>
+                    <span>Power BI</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>Real-time data pipeline processing 10K+ events/minute</p>
+                  <ul>
+                    <li>Built live end-to-end streaming solution</li>
+                    <li>Implemented schema validation</li>
+                    <li>Created real-time visualizations</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/live-weatherstreaming-app" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Project 3: Predictive Analysis for Traffic Management -->
-        <div class="project-card" onclick="flipCard(this)">
-          <div class="project-card-inner">
-            <div class="project-card-front">
-              <h3>Predictive Analysis for Traffic Management</h3>
-              <ul>
-                <li>Click for info</li>
-              </ul>
+        <!-- AWS Subcategory -->
+        <div class="subcategory">
+          <h4 class="subcategory-title">AWS</h4>
+          <div class="project-grid">
+            <!-- AWS Project 1: Flight Delay Prediction -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Flight Delay Prediction</h3>
+                  <div class="tech-tags">
+                    <span>Amazon S3</span>
+                    <span>Glue ETL</span>
+                    <span>Glue Crawlers</span>
+                    <span>Athena</span> 
+                    <span>Lambda</span> 
+                    <span>SageMaker</span>
+                    <span>QuickSight</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>Data lake architecture with 89% prediction accuracy</p>
+                  <ul>
+                    <li>Organized S3 buckets (raw/processed/results)</li>
+                    <li>Used AWS Glue Crawlers for data catalog</li>
+                    <li>Random Forest model in SageMaker</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/Airline-AWS-Datalake-Ml-Pipeline" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="project-card-back">
-              <p>
-                This project focuses on predicting traffic patterns to optimize traffic management systems. 
-              </p>
-              <p>
-                Technologies used: Python, Pandas, Scikit-Learn, Matplotlib, Seaborn.
-              </p>
-              <a href="https://github.com/jayanthi06/PredictiveAnalysisTrafficMngmnt" target="_blank">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Project 4: Online Fraud Detection -->
-        <div class="project-card" onclick="flipCard(this)">
-          <div class="project-card-inner">
-            <div class="project-card-front">
-              <h3>Online Fraud Detection</h3>
-              <ul>
-                <li>Click for info</li>
-              </ul>
-            </div>
-            <div class="project-card-back">
-              <p>Implemented machine learning models to detect online payment fraud, reducing fraud losses by 33%.</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Project 5: Power BI Churn Analysis of Sales Dashboard -->
-        <div class="project-card" onclick="flipCard(this)">
-          <div class="project-card-inner">
-            <div class="project-card-front">
-              <h3>Power BI Churn Analysis of Sales Dashboard</h3>
-              <ul>
-                <li>Click for info</li>
-              </ul>
-            </div>
-            <div class="project-card-back">
-              <p>
-                Developed a Power BI dashboard to analyze customer churn and sales performance. 
-                The dashboard includes key metrics such as churn rate, customer lifetime value, and sales trends. 
-                Used DAX (Data Analysis Expressions) to create calculated columns and measures for advanced analytics.
-              </p>
-              <a href="https://github.com/your-username/powerbi-churn-analysis" target="_blank">View on GitHub</a>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Project 6: Power BI Healthcare Analysis Dashboard -->
-        <div class="project-card" onclick="flipCard(this)">
-          <div class="project-card-inner">
-            <div class="project-card-front">
-              <h3>Power BI Healthcare Analysis Dashboard</h3>
-              <br>
-              <ul>
-                <li>Click for info</li>
-              </ul>
-            </div>
-            <div class="project-card-back">
-              <p>
-                Developed a Power BI dashboard to analyze hospital and insurance provider performance. 
-                The dashboard includes key metrics such as hospital rank based on insurance provider, top N dynamic data for hospitals, and insurance provider trends. 
-                Used DAX (Data Analysis Expressions) to create calculated columns and measures for advanced analytics.
-              </p>
-              <a href="https://github.com/your-username/powerbi-healthcare-analysis" target="_blank">View on GitHub</a>
-            </div>
-          </div>
-        </div>
 
-         <!-- Project 7: CI/CD Pipeline for Train Schedule Auto-Deploy -->
-      <div class="project-card" onclick="flipCard(this)">
-        <div class="project-card-inner">
-          <div class="project-card-front">
-            <h3>CI/CD Pipeline for Train Schedule Auto-Deploy</h3>
-            <ul>
-              <li>Click for info</li>
-            </ul>
-          </div>
-          <div class="project-card-back">
-            <p>
-              Developed a CI/CD pipeline to automate the deployment of a train schedule application. 
-              The pipeline includes automated testing, continuous integration, and continuous deployment using tools like Jenkins and Docker.
-            </p>
-            <a href="https://github.com/jayanthi06/cicd-pipeline-train-schedule-autodeploy" target="_blank">View on GitHub</a>
+            <!-- AWS Project 2: Airlines Data Pipeline -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Airlines Data Pipeline</h3>
+                  <div class="tech-tags">
+                    <span>Redshift</span>
+                    <span>S3,Athena</span>
+                    <span>Glue</span>
+                    <span>Step Function</span>
+                    <span>SNS</span>
+                    <span>QuickSight</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>Scalable pipeline processing 10M+ records daily</p>
+                  <ul>
+                    <li>Automated pipeline dataingestion</li>
+                    <li>Trigger using Glue Step Functions,Notifies completion via SNS</li>
+                    <li>Optimized Redshift queries</li>
+                    <li>Created executive dashboards</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/Airline-Data-Ingestion-Using-AWS" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AWS Project 3: COVID-19 Analysis -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>COVID-19 Analysis</h3>
+                  <div class="tech-tags">
+                    <span>Athena</span>
+                    <span>S3</span>
+                    <span>Athna</span>
+                    <span>Python</span>
+                    <span>Power BI</span>
+                    <span>QuickSight</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>Global pandemic tracking with 95% data freshness</p>
+                  <ul>
+                    <li>Integrated WHO and JHU data sources</li>
+                    <li>Implemented S3 partitioning strategy</li>
+                    <li>Built interactive dashboards</li>
+                    <li>Performed data transformation, exploration, visualization, and trend analysis</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/covid-data-analysis-using-aws" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AWS Project 4: Kafka Integration -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Kafka-AWS Integration</h3>
+                  <div class="tech-tags">
+                    <span>Kafka</span>
+                    <span>Lambda</span>
+                    <span>Python</span>
+                    <span>Power BI</span>
+                    <span>CloudWatch</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>Real-time streaming processing 5K messages/sec</p>
+                  <ul>
+                    <li>Configured Kafka clusters on EC2</li>
+                    <li>Implemented Lambda consumers</li>
+                    <li>Set up CloudWatch monitoring</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/Stock-Market-Real-Time-Data-Analysis-Using-Kafka" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AWS Project 5: Spotify Analysis -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Spotify Analysis</h3>
+                  <div class="tech-tags">
+                    <span>Spotify API</span>
+                    <span>S3</span>
+                    <span>Glue</span>
+                    <span>Athena</span>
+                    <span>QuickSight</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>Music streaming trends dashboard</p>
+                  <ul>
+                    <li>Built caching mechanism for API</li>
+                    <li>Created partitioned S3 storage</li>
+                    <li>Identified key listener patterns</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/spotify-data-analysis-using-aws" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AWS Project 6: Snowflake Data Warehouse -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Snowflake Data Warehouse</h3>
+                  <div class="tech-tags">
+                    <span>Snowflake</span>
+                    <span>SnowSQL</span>
+                    <span>SnowSQL CLI</span>
+                    <span>Snowpipe</span>
+                    <span>AWS S3</span>
+                    <span>Tableau</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>75% faster queries vs legacy system</p>
+                  <ul>
+                    <li>Implemented auto-suspend for cost savings</li>
+                    <li>Designed star/snowflake schemas</li>
+                    <li>Integrated with Tableau</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/snowflake-data-analysis-project-using-aws" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Project 8: Power Automate Flow -->
-      <div class="project-card" onclick="flipCard(this)">
-        <div class="project-card-inner">
-          <div class="project-card-front">
-            <h3>Power Automate Flow</h3>
-            <ul>
-              <li>Click for info</li>
-            </ul>
+      <!-- Power Platform Projects Section -->
+      <div class="category-section">
+        <h3 class="category-title">Power Platform Projects</h3>
+        
+        <!-- Power BI Subcategory -->
+        <div class="subcategory">
+          <h4 class="subcategory-title">Power BI</h4>
+          <div class="project-grid">
+            <!-- Power BI Project 1: Healthcare Analytics -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Healthcare Analytics</h3>
+                  <div class="tech-tags">
+                    <span>Power BI</span>
+                    <span>DAX Measures and KPIs</span>
+                    <span>Star Schema</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>Identified 15% revenue leakage opportunities</p>
+                  <ul>
+                    <li>Analyzed hospital/insurance performance</li>
+                    <li>Created dynamic top N visuals</li>
+                    <li>Implemented drill-through functionality</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/Healthcare-Analytics-Using-DAX" target="_blank" class="project-link">View On Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Power BI Project 2: Fraud Detection -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Fraud Detection</h3>
+                  <div class="tech-tags">
+                    <span>Power BI</span>
+                    <span>DAX Measures and KPIs</span>
+                    <span>Conditional Formatting and Slicers</span>
+                    <span>ML(Python)</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>Detected fraud in 0.01% of transactions</p>
+                  <ul>
+                    <li>Integrated Python ML predictions</li>
+                    <li>Created transaction heatmaps</li>
+                    <li>Implemented conditional formatting</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://app.powerbi.com/links/t9vNB8TRr8?ctid=5df7bfe8-c66e-4465-9a6b-7636fd5c6dd8&pbi_source=linkShare" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Power BI Project 3: Olympics Analytics -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Olympics Analytics</h3>
+                  <div class="tech-tags">
+                    <span>Power BI</span>
+                    <span>Power Query</span>
+                    <span>DAX and Aggregations</span>
+                    <span>Drillthrough Filters and Slicers</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>120 years of Olympic data analysis</p>
+                  <ul>
+                    <li>Cleaned historical records</li>
+                    <li>Created medal count calculations</li>
+                    <li>Built country comparison tools</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/Olympics-Analytics-Project-Using-Powerbi" target="_blank" class="project-link">View on Github</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="project-card-back">
-            <p>
-              Developed an automated workflow using Microsoft Power Automate flow, integrates multiple data sources, automates repetitive tasks, and sends notifications to stakeholders.
-              Reduces the manual process by automation
-            </p>
-            <p>
-              Technologies used: Power Automate, Microsoft 365, and cloud-based connectors.
-            </p>
-            <a href="https://github.com/jayanthi06/Leave-Approval-Automation-using-Power-Automate" target="_blank">View on GitHub</a>
+        </div>
+
+        <!-- Power Automate Subcategory -->
+        <div class="subcategory">
+          <h4 class="subcategory-title">Power Automate</h4>
+          <div class="project-grid">
+            <!-- Power Automate Project 1: Leave Request -->
+            <div class="project-card" onclick="flipCard(this)">
+              <div class="project-card-inner">
+                <div class="project-card-front">
+                  <h3>Leave Request Automation</h3>
+                  <div class="tech-tags">
+                    <span>Power Automate</span>
+                    <span>Microsoft Forms</span>
+                    <span>SharePoint</span>
+                    <span>Outlook</span>
+                    <span>Teams</span>
+                  </div>
+                </div>
+                <div class="project-card-back">
+                  <p>Reduced approval time by 80%</p>
+                  <ul>
+                    <li>Automated form to approval workflow</li>
+                    <li>Integrated Outlook/Teams notifications</li>
+                    <li>Added error handling</li>
+                  </ul>
+                  <div class="project-links">
+                    <a href="https://github.com/jayanthi06/Leave-Approval-Automation-using-Power-Automate" target="_blank" class="project-link">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Other Projects Section -->
+      <div class="category-section">
+        <h3 class="category-title">Other Projects</h3>
+        <div class="project-grid">
+          <!-- Project 1: Autism Support App -->
+          <div class="project-card" onclick="flipCard(this)">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3>Autism Support App</h3>
+                <div class="tech-tags">
+                  <span>Python</span>
+                  <span>Flask</span>
+                  <span>Machine Learning</span>
+                </div>
+              </div>
+              <div class="project-card-back">
+                <p>Custom learning activities for children with autism</p>
+                <ul>
+                  <li>Audio processing features</li>
+                  <li>Responsive design</li>
+                  <li>Accessibility focused</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/jayanthi06/Autism-App" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Used Cars Price Prediction -->
+          <div class="project-card" onclick="flipCard(this)">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3>Used Cars Price Prediction</h3>
+                <div class="tech-tags">
+                  <span>Python</span>
+                  <span>Scikit-learn</span>
+                  <span>Random Forest</span>
+                </div>
+              </div>
+              <div class="project-card-back">
+                <p>Machine learning model to predict car prices</p>
+                <ul>
+                  <li>Decision Tree and Random Forest models</li>
+                  <li>Data cleaning and feature engineering</li>
+                  <li>Model evaluation metrics</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/jayanthi06/UsedCarsPricePrediction" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: CI/CD Pipeline -->
+          <div class="project-card" onclick="flipCard(this)">
+            <div class="project-card-inner">
+              <div class="project-card-front">
+                <h3>CI/CD Pipeline</h3>
+                <div class="tech-tags">
+                  <span>Jenkins</span>
+                  <span>Docker</span>
+                  <span>DevOps</span>
+                </div>
+              </div>
+              <div class="project-card-back">
+                <p>Automated deployment pipeline</p>
+                <ul>
+                  <li>Continuous integration/continuous deployment</li>
+                  <li>Automated testing</li>
+                  <li>Infrastructure as code</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/jayanthi06/cicd-pipeline-train-schedule-autodeploy" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-
-
-
+  <!-- Skills Section -->
   <section id="skills" class="skills">
     <div class="container">
       <h2>Skills</h2>
@@ -259,7 +615,7 @@
         <div class="skill-category">
           <h3>Programming & Scripting</h3>
           <div class="skill-item">
-            <span class="skill-name">Python</span>
+            <span class="skill-name">Python(ML, Flask, Automation)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 90%;"></div>
             </div>
@@ -277,13 +633,19 @@
             </div>
           </div>
           <div class="skill-item">
+            <span class="skill-name">PySpark</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
             <span class="skill-name">SAS</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 85%;"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">SQL</span>
+            <span class="skill-name">SQL(Snowflake, Redshift, Athena)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 95%;"></div>
             </div>
@@ -318,7 +680,13 @@
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">ETL Tools (Ab Initio, Informatica)</span>
+            <span class="skill-name">ETL Tools (Ab Initio, Informatica,SSIS)</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Data Pipelines (Glue, Azure Data Factory)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 70%;"></div>
             </div>
@@ -330,7 +698,7 @@
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">SSIS (SQL Server Integration Services)</span>
+            <span class="skill-name">Data Modeling (Star/Snowflake Schema)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 75%;"></div>
             </div>
@@ -365,13 +733,13 @@
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">Scikit-Learn</span>
+            <span class="skill-name">Scikit-Learn, LightGBM, XGBoost</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 80%;"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">Churn Analysis</span>
+            <span class="skill-name">Model Deployment (Flask, Azure ML)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 85%;"></div>
             </div>
@@ -382,19 +750,25 @@
         <div class="skill-category">
           <h3>Cloud & Big Data</h3>
           <div class="skill-item">
-            <span class="skill-name">AWS (Redshift, S3, Glue, EMR, Kinesis, FireHose, Lambda)</span>
+            <span class="skill-name">AWS (Redshift, S3, Glue, EMR, Redshift, FireHose, Lambda)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 90%;"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">Azure</span>
+            <span class="skill-name">Azure(Synapse, Databricks, Event Hub)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 80%;"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">Big Data Analytics</span>
+            <span class="skill-name">Snowflake (Snowpipe, SnowSQL)</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">Kafka (Real-time Streaming)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 85%;"></div>
             </div>
@@ -411,13 +785,19 @@
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">Automation Frameworks</span>
+            <span class="skill-name">Automation Frameworks(Power Automate)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 85%;"></div>
             </div>
           </div>
           <div class="skill-item">
-            <span class="skill-name">DevOps</span>
+            <span class="skill-name">Infrastructure as Code (IaC)</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">DevOps-CI/CD (Jenkins, Docker)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 80%;"></div>
             </div>
@@ -451,7 +831,7 @@
         <div class="skill-category">
           <h3>Visualization & BI Tools</h3>
           <div class="skill-item">
-            <span class="skill-name">Power BI</span>
+            <span class="skill-name">Power BI(DAX, Power Query)</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 95%;"></div>
             </div>
@@ -470,6 +850,12 @@
           </div>
           <div class="skill-item">
             <span class="skill-name">Seaborn</span>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span class="skill-name">QuickSight</span>
             <div class="skill-bar">
               <div class="skill-level" style="width: 80%;"></div>
             </div>
